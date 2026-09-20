@@ -3828,8 +3828,12 @@
      --settings-pad: 14px 16px;
 }
 /** * @deprecated Prefer css/variables.css directly. * Kept as a stable path for older references / caches. */
+
+
+
+
  :root {
-     --ds-info-rgb: 163, 134, 96;
+     --ds-info-rgb: 255,255,255;
      --ds-info-text: #000000;
      --ds-info-link: #291802;
      --ds-info-link-hover: #774503;
@@ -4160,6 +4164,17 @@
 }
 #app:not(.compact) #act{
     box-shadow:0 -2px 0 #000
+}
+
+#tr_chat>td{
+    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.55);
+    color:var(--ds-info-text, var(--ui-text, #000000))
+}
+#tr_chat>td a:not(.ui-btn):link,#tr_chat>td a:not(.ui-btn):visited{
+    color:var(--ds-info-link, #555555)
+}
+#tr_chat>td a:not(.ui-btn):hover,#tr_chat>td a:not(.ui-btn):focus{
+    color:var(--ds-info-link-hover, #333333)
 }
 
 #relatives_block,#history_block,#parameters_skills_block,#buffdey{
