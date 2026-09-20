@@ -1,3 +1,106 @@
+:root {
+	--skill-fill: #5FBF55;
+	--skill-back: #DDDBE0;
+
+	--param-fill: #5FBF55;
+	--param-back: #F46461;
+
+	--bar-width: 170px;
+}
+
+
+:root {
+     --cw3-page-bg: RGBA(163, 134, 96, 0.8);
+     --cw3-page-text: #000000;
+     --ds-page-text: #000000;
+     --ds-page-link: #291802;
+     --ds-page-link-hover: #774503;
+}
+:root {
+     --ui-radius: 0px;
+     --ui-height: 20px;
+    /* Spacing scale (utils: m-*, p-*) — Bootstrap-like */
+     --ui-space-0: 0;
+     --ui-space-1: 0.25rem;
+     --ui-space-2: 0.5rem;
+     --ui-space-3: 1rem;
+     --ui-space-4: 1.5rem;
+     --ui-space-5: 3rem;
+    /* Lines */
+     --ui-line: rgba(0, 0, 0, .16);
+     --ui-line-soft: rgba(var(--ds-info-rgb, 255, 255, 255), .12);
+    /* Surfaces / fills */
+     --ui-fill: rgba(var(--ds-info-rgb, 255, 255, 255), .58);
+     --ui-fill-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .78);
+     --ui-secondary: rgba(var(--ds-info-rgb, 255, 255, 255), .35);
+     --ui-surface-subtle: rgba(var(--ds-info-rgb, 255, 255, 255), .03);
+     --ui-surface-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .10);
+    /* Semantic colors */
+     --ui-accent: var(--ds-primary, #d0b690);
+     --ui-accent-hover: color-mix(in srgb, var(--ds-primary, #d0b690) 86%, black);
+     --ui-accent-faint: color-mix(in srgb, var(--ui-accent) 12%, transparent);
+     --ui-accent-border-soft: color-mix(in srgb, var(--ui-accent) 28%, transparent);
+     --ui-danger: var(--ds-danger, #f26863);
+     --ui-danger-hover: color-mix(in srgb, var(--ds-danger, #f26863) 86%, black);
+     --ui-success: var(--ds-success, #98cc99);
+     --ui-success-hover: color-mix(in srgb, var(--ui-success) 86%, black);
+     --ui-info: var(--ds-info-link, #555555);
+     --ui-info-hover: var(--ds-info-link-hover, #333333);
+     --ui-warning: var(--ds-warning, #cc6602);
+     --ui-text: var(--ds-info-text, #000000);
+     --ui-text-muted: color-mix(in srgb, var(--ui-text) 72%, transparent);
+     --ui-text-subtle: color-mix(in srgb, var(--ui-text) 55%, transparent);
+     --ui-text-status-muted: color-mix(in srgb, var(--ui-info) 40%, var(--ui-text));
+     --ui-on-accent: var(--ds-on-accent, #ffffff);
+    /* Inputs */
+     --ui-input-bg: var(--ds-input-bg, #000000);
+     --ui-input-text: var(--ds-input-text, #ffffff);
+     --ui-input-bg-hover: color-mix(in srgb, var(--ds-input-bg, #000000) 88%, white);
+     --ui-input-bg-muted: color-mix(in srgb, var(--ui-input-bg) 80%, transparent);
+    /* Soft status backgrounds */
+     --ui-danger-soft: color-mix(in srgb, var(--ui-danger) 30%, transparent);
+     --ui-danger-faint: color-mix(in srgb, var(--ui-danger) 12%, transparent);
+     --ui-danger-medium: color-mix(in srgb, var(--ui-danger) 50%, transparent);
+     --ui-danger-strong: color-mix(in srgb, var(--ui-danger) 80%, transparent);
+     --ui-danger-border-soft: color-mix(in srgb, var(--ui-danger) 36%, transparent);
+     --ui-success-soft: color-mix(in srgb, var(--ui-success) 30%, transparent);
+     --ui-success-faint: color-mix(in srgb, var(--ui-success) 15%, transparent);
+     --ui-success-border: color-mix(in srgb, var(--ui-success) 28%, transparent);
+     --ui-info-soft: color-mix(in srgb, var(--ui-info) 30%, transparent);
+     --ui-warning-soft: color-mix(in srgb, var(--ui-warning) 30%, transparent);
+    /* Shared one-offs */
+     --ui-quote-bg: color-mix(in srgb, var(--ui-text) 20%, transparent);
+     --ui-tag-add-border: color-mix(in srgb, var(--ui-success) 70%, black);
+     --ui-tag-add-bg: color-mix(in srgb, var(--ui-success) 85%, black);
+     --ui-not-read-bg: color-mix(in srgb, var(--ui-danger) 38%, white);
+    /* Settings layout (geometry only) */
+     --settings-radius: 14px;
+     --settings-pad: 14px 16px;
+}
+/** * @deprecated Prefer css/variables.css directly. * Kept as a stable path for older references / caches. */
+
+ :root {
+     --ds-info-rgb: 214, 105, 0;
+     --ds-info-text: #000000;
+     --ds-info-link: #291802;
+     --ds-info-link-hover: #774503;
+     --ds-input-bg: #ffffff;
+     --ds-input-text: #000000;
+     --ds-primary: #ffffff;
+     --ds-danger: #B2241F;
+     --ds-success: #2C7D2D;
+     --ds-warning: #774503;
+     --ds-on-accent: #000000;
+	 --ds-main-backgound: rgb(255, 222, 170);
+}
+
+
+
+
+
+
+
+
 .header-warning {
      background: rgba(var(--ds-info-rgb, 255, 255, 255), 0.9);
      font-weight: bold;
@@ -3218,19 +3321,41 @@
  .hidden {
      display: none;
 }
+
+.mixbtn {
+	background: 	 transparent !important;
+	border: 		 none 		 !important;
+	padding:    	 0 			 !important;
+    height:     	 auto 		 !important;
+    width: 			 auto 		 !important;
+    gap: 			 0 			 !important;
+    border-radius:   0 		 	 !important;
+    color: 			 inherit  	 !important;
+    font: 			 inherit 	 !important;
+    line-height: 	 inherit 	 !important;
+    text-align: 	 left		 !important;
+    cursor: 		 pointer	 !important;
+	text-decoration: underline 	 !important;
+	
+}
+.mixbtn:hover {
+	color: rgb(var(--ds-info-rgb)) !important;
+}
+
  .ui-btn {
      box-sizing: border-box;
      display: inline-flex;
      align-items: center;
      justify-content: center;
      gap: 6px;
-     padding: 6px 6px;
-     border: 1px solid var(--ui-line);
-     border-radius: 10px;
+     padding: 0 6px;
+     border: 2px solid #F1F1F1;
+     border-radius: 0;
      background: var(--ui-fill);
      color: var(--ui-text);
-     font: inherit;
-     line-height: 1.2;
+     font: Verdana;
+	 font-size: 14px;
+     height: var(--ui-height);
      text-decoration: none;
      cursor: pointer;
      transition: background-color .15s ease, border-color .15s ease, opacity .15s ease;
@@ -3247,7 +3372,7 @@
      background: var(--ui-fill-hover);
 }
  .ui-btn--primary {
-     border-color: color-mix(in srgb, var(--ui-accent) 35%, transparent);
+    
      background: var(--ui-accent);
      color: var(--ui-on-accent);
 }
@@ -3305,8 +3430,8 @@
  .ui-input {
      box-sizing: border-box;
      width: 100%;
-     min-height: var(--ui-height);
-     padding: 6px 10px;
+     height: var(--ui-height);
+     padding: 2px 8px;
      border: 1px solid var(--ui-line);
      border-radius: var(--ui-radius);
      background: var(--ui-input-bg);
@@ -3554,6 +3679,7 @@
      cursor: not-allowed;
 }
  .ui-range {
+	 
      display: flex;
      align-items: center;
      gap: 12px;
@@ -3569,94 +3695,81 @@
      font-variant-numeric: tabular-nums;
      font-weight: 600;
 }
+
 /* Same range chrome as settings (озвучка) — also used in /cw3 which does not load common_ui.css */
- input[type="range"] {
-     --range-progress: 0%;
-     -webkit-appearance: none;
-     appearance: none;
-     background: transparent;
-     background-color: transparent;
-     border: none;
-     outline: none;
-     box-shadow: none;
-     width: 100%;
-     height: 1.25rem;
-     min-height: 24px;
-     margin: 0;
-     padding: 0;
-     accent-color: var(--ui-accent, #d0b690);
-     cursor: pointer;
-     box-sizing: border-box;
-     color: inherit;
-     font: inherit;
+input[type="range"] {
+    --range-color: #e8a53a;                 /* жёлто-оранжевый thumb */
+    --range-track: #fff8e7;                 /* светлый трек */
+    --range-track-h: 15px;                  /* толстый трек */
+    --range-thumb-w: 23px;                  /* thumb по высоте трека */
+    --range-thumb-h: var(--range-thumb-w);
+	--range-thumb-radius: 10px;
+
+    --range-progress: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: var(--range-thumb-h);
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
 }
- input[type="range"]:hover, input[type="range"]:focus, input[type="range"]:focus-visible {
-     border: none;
-     outline: none;
-     box-shadow: none;
-     background-color: transparent;
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: var(--range-track-h);
+    border-radius: calc(var(--range-track-h) / 2);
+    border: none;
+    background: var(--range-track);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
 }
- input[type="range"]:disabled {
-     opacity: .55;
-     cursor: not-allowed;
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--range-thumb-w);
+    height: var(--range-thumb-h);
+    margin-top: calc((var(--range-track-h) - var(--range-thumb-h)) / 2);
+    border-radius: 6px;
+    background: var(--range-color);
+    border: none;
+	border-radius: var(--range-thumb-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: grab;
 }
- input[type="range"]::-webkit-slider-runnable-track {
-     height: 4px;
-     border-radius: 4px;
-     border: none;
-     background: linear-gradient( to right, var(--ui-accent, #d0b690) 0%, var(--ui-accent, #d0b690) var(--range-progress), var(--ui-input-bg, #000000) var(--range-progress), var(--ui-input-bg, #000000) 100% );
+
+input[type="range"]:active::-webkit-slider-thumb {
+    cursor: grabbing;
 }
- input[type="range"]::-webkit-slider-thumb {
-     -webkit-appearance: none;
-     width: 14px;
-     height: 14px;
-     border-radius: 50%;
-     background: var(--ui-accent, #d0b690);
-     border: 2px solid var(--ui-input-bg, #000000);
-     margin-top: -5px;
-     cursor: pointer;
+
+
+input[type="range"]::-moz-range-track {
+    height: var(--range-track-h);
+    border-radius: calc(var(--range-track-h) / 2);
+    background: var(--range-track);
+    border: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
 }
- input[type="range"]::-moz-range-track {
-     height: 4px;
-     border-radius: 4px;
-     border: none;
-     background: var(--ui-input-bg, #000000);
+
+input[type="range"]::-moz-range-progress {
+    height: var(--range-track-h);
+    border-radius: calc(var(--range-track-h) / 2);
+    background: var(--range-track);
 }
- input[type="range"]::-moz-range-progress {
-     height: 4px;
-     border-radius: 4px;
-     background: var(--ui-accent, #d0b690);
-}
- input[type="range"]::-moz-range-thumb {
-     width: 14px;
-     height: 14px;
-     border-radius: 50%;
-     background: var(--ui-accent, #d0b690);
-     border: 2px solid var(--ui-input-bg, #000000);
-     cursor: pointer;
-     box-sizing: border-box;
-}
- input[type="range"]::-ms-track {
-     height: 4px;
-     border: none;
-     color: transparent;
-     background: transparent;
-}
- input[type="range"]::-ms-fill-lower {
-     background: var(--ui-accent, #d0b690);
-     border-radius: 4px;
-}
- input[type="range"]::-ms-fill-upper {
-     background: var(--ui-input-bg, #000000);
-     border-radius: 4px;
-}
- input[type="range"]::-ms-thumb {
-     width: 14px;
-     height: 14px;
-     border-radius: 50%;
-     background: var(--ui-accent, #d0b690);
-     border: 2px solid var(--ui-input-bg, #000000);
-     cursor: pointer;
+
+input[type="range"]::-moz-range-thumb {
+    width: var(--range-thumb-w);
+    height: var(--range-thumb-h);
+    border-radius: var(--range-thumb-radius);
+    background: var(--range-color);
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+    box-sizing: border-box;
 }
  .ui-file {
      display: block;
@@ -3768,10 +3881,9 @@
  
  body {
     /* background-image: url('/design/2026/autumn/1614350/background.png?653673811'); */
-	 background-color: rgb(255, 222, 170);
      background-attachment: fixed;
      background-repeat: repeat;
-     background-color: rgb(255, 222, 170);
+     background-color: var(--ds-main-backgound);
      color: #000000;
 }
  #app {
@@ -3779,7 +3891,7 @@
 }
 
  #tr_actions, #tr_mouth, #tr_info, #compact_actions {
-     background-color: RGBA(163, 134, 96, 0.8) !important;
+    
      color: inherit;
 }
  #app.compact .compact-info-tab {
@@ -3803,7 +3915,7 @@
 
 
  #thdey, #ctdey, #compact_info, #relatives_block, #history_block, #parameters_skills_block, #buffdey {
-     background-color: rgba(163,134,96, 0.55);
+
      color: var(--ds-info-text, inherit);
 }
  html,body{
@@ -3815,22 +3927,23 @@
     width:1000px;
     margin:auto
 }
-#newchat,#newls{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-width:1.2em;
-    margin-left:5px;
-    padding:0 5px;
-    border-radius:999px;
-    background-color:var(--ds-primary, #D0B690);
-    color:var(--ds-on-accent, #ffffff);
-    font-size:.78em;
-    font-weight:600;
-    line-height:1.4
+#newchat, #newls {
+    font-family: Roboto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.2em;
+    margin-left: 3px;
+    /* padding: 0 5px; */
+    background-color: var(--ds-primary, #D0B690);
+    color: var(--ds-on-accent, #000000);
+    font-size: 14px;
+    font-weight: 600;
+    /* line-height: 1.5; */
 }
+
 #black_points{
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.6);
+   /* background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.6); */
     color:var(--ds-info-text, inherit)
 }
 .small{
@@ -3843,45 +3956,47 @@
     color:var(--ds-info-link-hover, #333333)
 }
 .game-topbar{
+	padding-left: 0 !important;
     position:relative;
     z-index:1200;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:12px;
+    gap:2px;
     width:100%;
     max-width:1000px;
     box-sizing:border-box;
     margin:0 0 2px 0;
-    padding:4px 6px;
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.3);
+    padding:0;
+    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0);
     color:var(--ds-info-text, inherit);
-    font-size:14px !important
+    font-size:14px !important;
+	flex-wrap: wrap;
+}
+.chars {
+    flex-basis: 100%;
+    display: flex;      /* ← теперь .chars — flex-контейнер */
+    flex-wrap: wrap;
+    gap: 10px;          /* ← работает: отступ между .chars-детьми */
 }
 .game-topbar-nav{
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    gap:4px;
+    gap:10px;
     min-width:0
 }
 .game-topbar-nav>a{
     display:inline-flex;
-    align-items:center;
-    padding:4px 10px;
-    border-radius:8px;
+    padding:2px 0;
     color:var(--ds-info-text, inherit);
-    text-decoration:none;
-    line-height:1.25;
-    transition:background-color .15s ease,color .15s ease
 }
 .game-topbar-nav>a:link,.game-topbar-nav>a:visited{
     color:var(--ds-info-text, inherit);
     text-decoration:none
 }
 .game-topbar-nav>a:hover,.game-topbar-nav>a:focus{
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.45);
-    color:var(--ds-primary, #D0B690);
+    color: rgb(var(--ds-info-rgb));
     text-decoration:none
 }
 .game-topbar-settings{
@@ -4051,7 +4166,7 @@
     margin:0;
     padding:0;
     margin-top:7px;
-    background:var(--ds-primary, #D0B690)
+    background: #000000;
 }
 #main_table>tr,#main_table>tr>td,#main_table>tbody>tr,#main_table>tbody>tr>td{
     margin:0;
@@ -4097,7 +4212,7 @@
 
 
 #relatives_block,#history_block,#parameters_skills_block,#buffdey{
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.55);
+
     color:var(--ds-info-text, inherit);
     border-radius:var(--ui-radius, 8px);
     padding:6px 8px;
@@ -4114,7 +4229,7 @@
     width:auto;
     max-width:100%;
     box-sizing:border-box;
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.55);
+    /* background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.55); */
     color:var(--ds-info-text, inherit);
     border-radius:var(--ui-radius, 8px);
     padding:8px 12px;
@@ -4417,6 +4532,7 @@
     padding:5px;
     border-radius:5px;
     border-width:1px;
+	border: 1px solid #000000;
     width:250px
 }
 #block_deys.mobile{
@@ -5055,6 +5171,8 @@
     max-width:170px;
     width:fit-content
 }
+
+
 .parameter,.skill{
     display:flex;
     align-items:center;
@@ -5062,56 +5180,104 @@
     margin-bottom:2px;
     justify-content:left;
     flex-direction:row;
-    height:17px
-}
-.parameter-header{
-    margin-top:.5em;
-    margin-bottom:.3em
-}
-.level{
-    font-weight:bold;
-    width:15px
-}
-.bar{
-    width:100%;
-    box-shadow:0 0 0 1px #000;
-    height:15px;
-    font-size:11px;
-    position:relative;
-    border-radius:3px;
-    overflow:hidden;
-    margin-left:2px;
-    margin-right:2px;
-    transform:translateZ(0)
-}
-.bar-fill{
-    width:100%;
-    height:100%;
-    transform:scaleX(0);
-    transform-origin:left center;
-    transition:transform 1s ease-in-out;
-    -moz-transition:-moz-transform 1s ease-in-out;
-    -webkit-transition:-webkit-transform 1s ease-in-out;
-    -o-transition:-o-transform 1s ease-in-out
-}
-.bar-data{
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    color:var(--ui-on-accent, #ffffff);
-    z-index:1;
-    pointer-events:none
-}
-.symbole{
-    width:19px;
     height:17px;
-    background-image:url("/cw3/symbole/icons.png?v=461234272");
-    background-repeat:no-repeat;
-    background-position-x:0;
-    padding:0;
-    margin:0
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    height: 17px;
+    margin-bottom: 2px;
+    gap: 0;
+}
+
+.skill > .level:first-child {
+    flex: 0 0 auto;
+}
+
+.skill .bar {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+}
+
+.skill > .level:last-child {
+    flex: 0 0 auto;
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+
+
+.parameter-header {
+    margin-top: .5em;
+    margin-bottom: .3em;
+}
+
+.level {
+    font-weight: bold;
+    min-width: 15px;       /* ★ не width, а min-width */
+    white-space: nowrap;   /* ★ цифра не переносится */
+}
+
+.bar {
+    max-width: var(--bar-width, 170px);
+    width: 100%;
+    min-width: 0;          /* ★ важно для flex */
+    box-shadow: 0 0 0 1px #000;
+    height: 15px;
+    font-size: 11px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0;             /* ★ убираем margin, если родитель flex+gap */
+    transform: translateZ(0);
+}
+
+.bar-fill {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 1s ease-in-out;
+}
+
+.bar-data {
+    position: absolute;
+    inset: 0;
+    color: var(--ui-on-accent, #ffffff);
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* ★ центрируем текст в полоске */
+}
+
+.symbole {
+    width: 19px;
+    height: 17px;
+    background-image: url("/cw3/symbole/icons.png?v=461234272");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;        /* ★ иконка не сжимается */
+}
+
+/* строки — flex с gap */
+.parameter,
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 17px;
+    margin-bottom: 2px;
+}
+
+/* правая цифра у навыка — 1px от полоски, справа */
+.skill > .level:last-child {
+    margin-left: 1px;
+    text-align: right;
 }
 #weight .encumbered{
     color:var(--ui-danger, brown)
@@ -5125,18 +5291,23 @@
     opacity:.72;
     font-weight:initial
 }
+
+
 .parameter .bar-fill{
-    background:var(--ds-success, #1f7a4c)
+    background:var(--param-fill, green);
 }
 .parameter .bar{
-    background:var(--ui-danger, #b42318)
+    background:var(--param-back, red);
 }
 .skill .bar-fill{
-    background:var(--ds-primary, #D0B690)
+    background: var(--skill-fill, #5FBF55);
 }
 .skill .bar{
-    background:var(--ds-input-bg, #000000)
+    background: var(--skill-back, #DDDBE0);
 }
+
+
+
 #sky{
     height:150px;
     width:100%;
@@ -5410,6 +5581,10 @@
 #app.compact #tr_info .parameter,#app.compact #tr_info .skill{
     max-width:100%
 }
+
+#tr_info {
+	background: var(--ds-main-backgound);
+}
 #app.compact #tr_info .parameter .bar,#app.compact #tr_info .skill .bar{
     width:auto;
     min-width:120px;
@@ -5592,92 +5767,3 @@
     font-weight:normal;
     opacity:.75
 }
-
-
-
-
- :root {
-     --cw3-page-bg: RGBA(163, 134, 96, 0.8);
-     --cw3-page-text: #000000;
-     --ds-page-text: #000000;
-     --ds-page-link: #291802;
-     --ds-page-link-hover: #774503;
-}
-:root {
-     --ui-radius: 0px;
-     --ui-height: 34px;
-    /* Spacing scale (utils: m-*, p-*) — Bootstrap-like */
-     --ui-space-0: 0;
-     --ui-space-1: 0.25rem;
-     --ui-space-2: 0.5rem;
-     --ui-space-3: 1rem;
-     --ui-space-4: 1.5rem;
-     --ui-space-5: 3rem;
-    /* Lines */
-     --ui-line: rgba(0, 0, 0, .16);
-     --ui-line-soft: rgba(var(--ds-info-rgb, 255, 255, 255), .12);
-    /* Surfaces / fills */
-     --ui-fill: rgba(var(--ds-info-rgb, 255, 255, 255), .58);
-     --ui-fill-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .78);
-     --ui-secondary: rgba(var(--ds-info-rgb, 255, 255, 255), .35);
-     --ui-surface-subtle: rgba(var(--ds-info-rgb, 255, 255, 255), .03);
-     --ui-surface-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .10);
-    /* Semantic colors */
-     --ui-accent: var(--ds-primary, #d0b690);
-     --ui-accent-hover: color-mix(in srgb, var(--ds-primary, #d0b690) 86%, black);
-     --ui-accent-faint: color-mix(in srgb, var(--ui-accent) 12%, transparent);
-     --ui-accent-border-soft: color-mix(in srgb, var(--ui-accent) 28%, transparent);
-     --ui-danger: var(--ds-danger, #f26863);
-     --ui-danger-hover: color-mix(in srgb, var(--ds-danger, #f26863) 86%, black);
-     --ui-success: var(--ds-success, #98cc99);
-     --ui-success-hover: color-mix(in srgb, var(--ui-success) 86%, black);
-     --ui-info: var(--ds-info-link, #555555);
-     --ui-info-hover: var(--ds-info-link-hover, #333333);
-     --ui-warning: var(--ds-warning, #cc6602);
-     --ui-text: var(--ds-info-text, #000000);
-     --ui-text-muted: color-mix(in srgb, var(--ui-text) 72%, transparent);
-     --ui-text-subtle: color-mix(in srgb, var(--ui-text) 55%, transparent);
-     --ui-text-status-muted: color-mix(in srgb, var(--ui-info) 40%, var(--ui-text));
-     --ui-on-accent: var(--ds-on-accent, #ffffff);
-    /* Inputs */
-     --ui-input-bg: var(--ds-input-bg, #000000);
-     --ui-input-text: var(--ds-input-text, #ffffff);
-     --ui-input-bg-hover: color-mix(in srgb, var(--ds-input-bg, #000000) 88%, white);
-     --ui-input-bg-muted: color-mix(in srgb, var(--ui-input-bg) 80%, transparent);
-    /* Soft status backgrounds */
-     --ui-danger-soft: color-mix(in srgb, var(--ui-danger) 30%, transparent);
-     --ui-danger-faint: color-mix(in srgb, var(--ui-danger) 12%, transparent);
-     --ui-danger-medium: color-mix(in srgb, var(--ui-danger) 50%, transparent);
-     --ui-danger-strong: color-mix(in srgb, var(--ui-danger) 80%, transparent);
-     --ui-danger-border-soft: color-mix(in srgb, var(--ui-danger) 36%, transparent);
-     --ui-success-soft: color-mix(in srgb, var(--ui-success) 30%, transparent);
-     --ui-success-faint: color-mix(in srgb, var(--ui-success) 15%, transparent);
-     --ui-success-border: color-mix(in srgb, var(--ui-success) 28%, transparent);
-     --ui-info-soft: color-mix(in srgb, var(--ui-info) 30%, transparent);
-     --ui-warning-soft: color-mix(in srgb, var(--ui-warning) 30%, transparent);
-    /* Shared one-offs */
-     --ui-quote-bg: color-mix(in srgb, var(--ui-text) 20%, transparent);
-     --ui-tag-add-border: color-mix(in srgb, var(--ui-success) 70%, black);
-     --ui-tag-add-bg: color-mix(in srgb, var(--ui-success) 85%, black);
-     --ui-not-read-bg: color-mix(in srgb, var(--ui-danger) 38%, white);
-    /* Settings layout (geometry only) */
-     --settings-radius: 14px;
-     --settings-pad: 14px 16px;
-}
-/** * @deprecated Prefer css/variables.css directly. * Kept as a stable path for older references / caches. */
-
- :root {
-     --ds-info-rgb: 214, 105, 0;
-     --ds-info-text: #000000;
-     --ds-info-link: #291802;
-     --ds-info-link-hover: #774503;
-     --ds-input-bg: #C0B4A5;
-     --ds-input-text: #000000;
-     --ds-primary: #291802;
-     --ds-danger: #B2241F;
-     --ds-success: #2C7D2D;
-     --ds-warning: #774503;
-     --ds-on-accent: #FFFFFF;
-}
-
-
