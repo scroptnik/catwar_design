@@ -5606,7 +5606,7 @@
 }
 :root {
      --ui-radius: 0px;
-     --ui-height: 1px;
+     --ui-height: 34px;
     /* Spacing scale (utils: m-*, p-*) — Bootstrap-like */
      --ui-space-0: 0;
      --ui-space-1: 0.25rem;
