@@ -13,7 +13,7 @@
   --ui-line: rgba(0, 0, 0, .16);
   --ui-line-soft: rgba(var(--ds-info-rgb, 255, 255, 255), .12);
 
-  /* Surfaces / fills */
+
   --ui-fill: rgba(var(--ds-info-rgb, 255, 255, 255), .58);
   --ui-fill-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .78);
   --ui-secondary: rgba(var(--ds-info-rgb, 255, 255, 255), .35);
