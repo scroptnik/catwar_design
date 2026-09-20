@@ -3317,7 +3317,6 @@
      max-width: 100%;
      resize: vertical;
      min-height: 1em;
-     min-height: 2lh;
 }
  .ui-input::placeholder {
      color: color-mix(in srgb, var(--ui-input-text) 45%, transparent);
