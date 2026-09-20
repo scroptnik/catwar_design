@@ -3769,10 +3769,10 @@
  
  body {
     /* background-image: url('/design/2026/autumn/1614350/background.png?653673811'); */
-	 background-color: rgb(255, 255,255);
+	 background-color: rgb(255, 222, 170);
      background-attachment: fixed;
      background-repeat: repeat;
-     background-color: #D5DEEF;
+     background-color: rgb(255, 222, 170);
      color: #000000;
 }
  #app {
