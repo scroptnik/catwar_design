@@ -3766,85 +3766,7 @@
      color: var(--ui-on-accent);
 }
 /** * Layer 1 — variables * Theme tokens only. No selectors. * Consumed by common_ui.css and utils.css. */
- :root {
-     --ui-radius: 8px;
-     --ui-height: 34px;
-    /* Spacing scale (utils: m-*, p-*) — Bootstrap-like */
-     --ui-space-0: 0;
-     --ui-space-1: 0.25rem;
-     --ui-space-2: 0.5rem;
-     --ui-space-3: 1rem;
-     --ui-space-4: 1.5rem;
-     --ui-space-5: 3rem;
-    /* Lines */
-     --ui-line: rgba(0, 0, 0, .16);
-     --ui-line-soft: rgba(var(--ds-info-rgb, 255, 255, 255), .12);
-    /* Surfaces / fills */
-     --ui-fill: rgba(var(--ds-info-rgb, 255, 255, 255), .58);
-     --ui-fill-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .78);
-     --ui-secondary: rgba(var(--ds-info-rgb, 255, 255, 255), .35);
-     --ui-surface-subtle: rgba(var(--ds-info-rgb, 255, 255, 255), .03);
-     --ui-surface-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .10);
-    /* Semantic colors */
-     --ui-accent: var(--ds-primary, #d0b690);
-     --ui-accent-hover: color-mix(in srgb, var(--ds-primary, #d0b690) 86%, black);
-     --ui-accent-faint: color-mix(in srgb, var(--ui-accent) 12%, transparent);
-     --ui-accent-border-soft: color-mix(in srgb, var(--ui-accent) 28%, transparent);
-     --ui-danger: var(--ds-danger, #f26863);
-     --ui-danger-hover: color-mix(in srgb, var(--ds-danger, #f26863) 86%, black);
-     --ui-success: var(--ds-success, #98cc99);
-     --ui-success-hover: color-mix(in srgb, var(--ui-success) 86%, black);
-     --ui-info: var(--ds-info-link, #555555);
-     --ui-info-hover: var(--ds-info-link-hover, #333333);
-     --ui-warning: var(--ds-warning, #cc6602);
-     --ui-text: var(--ds-info-text, #000000);
-     --ui-text-muted: color-mix(in srgb, var(--ui-text) 72%, transparent);
-     --ui-text-subtle: color-mix(in srgb, var(--ui-text) 55%, transparent);
-     --ui-text-status-muted: color-mix(in srgb, var(--ui-info) 40%, var(--ui-text));
-     --ui-on-accent: var(--ds-on-accent, #ffffff);
-    /* Inputs */
-     --ui-input-bg: var(--ds-input-bg, #000000);
-     --ui-input-text: var(--ds-input-text, #ffffff);
-     --ui-input-bg-hover: color-mix(in srgb, var(--ds-input-bg, #000000) 88%, white);
-     --ui-input-bg-muted: color-mix(in srgb, var(--ui-input-bg) 80%, transparent);
-    /* Soft status backgrounds */
-     --ui-danger-soft: color-mix(in srgb, var(--ui-danger) 30%, transparent);
-     --ui-danger-faint: color-mix(in srgb, var(--ui-danger) 12%, transparent);
-     --ui-danger-medium: color-mix(in srgb, var(--ui-danger) 50%, transparent);
-     --ui-danger-strong: color-mix(in srgb, var(--ui-danger) 80%, transparent);
-     --ui-danger-border-soft: color-mix(in srgb, var(--ui-danger) 36%, transparent);
-     --ui-success-soft: color-mix(in srgb, var(--ui-success) 30%, transparent);
-     --ui-success-faint: color-mix(in srgb, var(--ui-success) 15%, transparent);
-     --ui-success-border: color-mix(in srgb, var(--ui-success) 28%, transparent);
-     --ui-info-soft: color-mix(in srgb, var(--ui-info) 30%, transparent);
-     --ui-warning-soft: color-mix(in srgb, var(--ui-warning) 30%, transparent);
-    /* Shared one-offs */
-     --ui-quote-bg: color-mix(in srgb, var(--ui-text) 20%, transparent);
-     --ui-tag-add-border: color-mix(in srgb, var(--ui-success) 70%, black);
-     --ui-tag-add-bg: color-mix(in srgb, var(--ui-success) 85%, black);
-     --ui-not-read-bg: color-mix(in srgb, var(--ui-danger) 38%, white);
-    /* Settings layout (geometry only) */
-     --settings-radius: 14px;
-     --settings-pad: 14px 16px;
-}
-/** * @deprecated Prefer css/variables.css directly. * Kept as a stable path for older references / caches. */
-
-
-
-
- :root {
-     --ds-info-rgb: 255,255,255;
-     --ds-info-text: #000000;
-     --ds-info-link: #291802;
-     --ds-info-link-hover: #774503;
-     --ds-input-bg: #C0B4A5;
-     --ds-input-text: #000000;
-     --ds-primary: #291802;
-     --ds-danger: #B2241F;
-     --ds-success: #2C7D2D;
-     --ds-warning: #774503;
-     --ds-on-accent: #FFFFFF;
-}
+ 
  body {
      background-image: url('/design/2026/autumn/1614350/background.png?653673811');
      background-attachment: fixed;
@@ -3855,13 +3777,7 @@
  #app {
      color: inherit;
 }
- :root {
-     --cw3-page-bg: RGBA(163, 134, 96, 0.8);
-     --cw3-page-text: #000000;
-     --ds-page-text: #000000;
-     --ds-page-link: #291802;
-     --ds-page-link-hover: #774503;
-}
+
  #tr_actions, #tr_mouth, #tr_info, #compact_actions {
      background-color: RGBA(163, 134, 96, 0.8) !important;
      color: inherit;
@@ -5676,3 +5592,92 @@
     font-weight:normal;
     opacity:.75
 }
+
+
+
+
+ :root {
+     --cw3-page-bg: RGBA(163, 134, 96, 0.8);
+     --cw3-page-text: #000000;
+     --ds-page-text: #000000;
+     --ds-page-link: #291802;
+     --ds-page-link-hover: #774503;
+}
+:root {
+     --ui-radius: 8px;
+     --ui-height: 34px;
+    /* Spacing scale (utils: m-*, p-*) — Bootstrap-like */
+     --ui-space-0: 0;
+     --ui-space-1: 0.25rem;
+     --ui-space-2: 0.5rem;
+     --ui-space-3: 1rem;
+     --ui-space-4: 1.5rem;
+     --ui-space-5: 3rem;
+    /* Lines */
+     --ui-line: rgba(0, 0, 0, .16);
+     --ui-line-soft: rgba(var(--ds-info-rgb, 255, 255, 255), .12);
+    /* Surfaces / fills */
+     --ui-fill: rgba(var(--ds-info-rgb, 255, 255, 255), .58);
+     --ui-fill-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .78);
+     --ui-secondary: rgba(var(--ds-info-rgb, 255, 255, 255), .35);
+     --ui-surface-subtle: rgba(var(--ds-info-rgb, 255, 255, 255), .03);
+     --ui-surface-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .10);
+    /* Semantic colors */
+     --ui-accent: var(--ds-primary, #d0b690);
+     --ui-accent-hover: color-mix(in srgb, var(--ds-primary, #d0b690) 86%, black);
+     --ui-accent-faint: color-mix(in srgb, var(--ui-accent) 12%, transparent);
+     --ui-accent-border-soft: color-mix(in srgb, var(--ui-accent) 28%, transparent);
+     --ui-danger: var(--ds-danger, #f26863);
+     --ui-danger-hover: color-mix(in srgb, var(--ds-danger, #f26863) 86%, black);
+     --ui-success: var(--ds-success, #98cc99);
+     --ui-success-hover: color-mix(in srgb, var(--ui-success) 86%, black);
+     --ui-info: var(--ds-info-link, #555555);
+     --ui-info-hover: var(--ds-info-link-hover, #333333);
+     --ui-warning: var(--ds-warning, #cc6602);
+     --ui-text: var(--ds-info-text, #000000);
+     --ui-text-muted: color-mix(in srgb, var(--ui-text) 72%, transparent);
+     --ui-text-subtle: color-mix(in srgb, var(--ui-text) 55%, transparent);
+     --ui-text-status-muted: color-mix(in srgb, var(--ui-info) 40%, var(--ui-text));
+     --ui-on-accent: var(--ds-on-accent, #ffffff);
+    /* Inputs */
+     --ui-input-bg: var(--ds-input-bg, #000000);
+     --ui-input-text: var(--ds-input-text, #ffffff);
+     --ui-input-bg-hover: color-mix(in srgb, var(--ds-input-bg, #000000) 88%, white);
+     --ui-input-bg-muted: color-mix(in srgb, var(--ui-input-bg) 80%, transparent);
+    /* Soft status backgrounds */
+     --ui-danger-soft: color-mix(in srgb, var(--ui-danger) 30%, transparent);
+     --ui-danger-faint: color-mix(in srgb, var(--ui-danger) 12%, transparent);
+     --ui-danger-medium: color-mix(in srgb, var(--ui-danger) 50%, transparent);
+     --ui-danger-strong: color-mix(in srgb, var(--ui-danger) 80%, transparent);
+     --ui-danger-border-soft: color-mix(in srgb, var(--ui-danger) 36%, transparent);
+     --ui-success-soft: color-mix(in srgb, var(--ui-success) 30%, transparent);
+     --ui-success-faint: color-mix(in srgb, var(--ui-success) 15%, transparent);
+     --ui-success-border: color-mix(in srgb, var(--ui-success) 28%, transparent);
+     --ui-info-soft: color-mix(in srgb, var(--ui-info) 30%, transparent);
+     --ui-warning-soft: color-mix(in srgb, var(--ui-warning) 30%, transparent);
+    /* Shared one-offs */
+     --ui-quote-bg: color-mix(in srgb, var(--ui-text) 20%, transparent);
+     --ui-tag-add-border: color-mix(in srgb, var(--ui-success) 70%, black);
+     --ui-tag-add-bg: color-mix(in srgb, var(--ui-success) 85%, black);
+     --ui-not-read-bg: color-mix(in srgb, var(--ui-danger) 38%, white);
+    /* Settings layout (geometry only) */
+     --settings-radius: 14px;
+     --settings-pad: 14px 16px;
+}
+/** * @deprecated Prefer css/variables.css directly. * Kept as a stable path for older references / caches. */
+
+ :root {
+     --ds-info-rgb: 255,255,255;
+     --ds-info-text: #000000;
+     --ds-info-link: #291802;
+     --ds-info-link-hover: #774503;
+     --ds-input-bg: #C0B4A5;
+     --ds-input-text: #000000;
+     --ds-primary: #291802;
+     --ds-danger: #B2241F;
+     --ds-success: #2C7D2D;
+     --ds-warning: #774503;
+     --ds-on-accent: #FFFFFF;
+}
+
+
