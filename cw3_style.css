@@ -4169,7 +4169,7 @@
 /* чат */
 
 #tr_chat>td{
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.55);
+    background:rgba(var(--ds-info-rgb, 255, 255, 255), 1);
     color:var(--ds-info-text, var(--ui-text, #000000))
 }
 #tr_chat>td a:not(.ui-btn):link,#tr_chat>td a:not(.ui-btn):visited{
@@ -4178,6 +4178,7 @@
 #tr_chat>td a:not(.ui-btn):hover,#tr_chat>td a:not(.ui-btn):focus{
     color:var(--ds-info-link-hover, #333333)
 }
+
 
 #relatives_block,#history_block,#parameters_skills_block,#buffdey{
     background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.55);
