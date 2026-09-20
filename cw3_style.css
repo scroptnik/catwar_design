@@ -3854,7 +3854,7 @@
     box-sizing:border-box;
     margin:0 0 2px 0;
     padding:4px 6px;
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.6);
+    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.2);
     color:var(--ds-info-text, inherit);
     font-size:14px !important
 }
