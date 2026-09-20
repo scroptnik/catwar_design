@@ -10,7 +10,7 @@
   --ui-space-4: 1.5rem;
   --ui-space-5: 3rem;
 
-  /* Lines */
+
   --ui-line: rgba(0, 0, 0, .16);
   --ui-line-soft: rgba(var(--ds-info-rgb, 255, 255, 255), .12);
 
@@ -21,7 +21,7 @@
   --ui-surface-subtle: rgba(var(--ds-info-rgb, 255, 255, 255), .03);
   --ui-surface-hover: rgba(var(--ds-info-rgb, 255, 255, 255), .10);
 
-  /* Semantic colors */
+
   --ui-accent: var(--ds-primary, #d0b690);
   --ui-accent-hover: color-mix(in srgb, var(--ds-primary, #d0b690) 86%, black);
   --ui-accent-faint: color-mix(in srgb, var(--ui-accent) 12%, transparent);
