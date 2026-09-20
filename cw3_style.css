@@ -4436,4 +4436,3 @@ input[type="range"]::-ms-thumb {
  * @deprecated Prefer css/variables.css directly.
  * Kept as a stable path for older references / caches.
  */
-@import url("variables.css");
