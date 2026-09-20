@@ -3768,7 +3768,8 @@
 /** * Layer 1 — variables * Theme tokens only. No selectors. * Consumed by common_ui.css and utils.css. */
  
  body {
-     background-image: url('/design/2026/autumn/1614350/background.png?653673811');
+    /* background-image: url('/design/2026/autumn/1614350/background.png?653673811'); */
+	 background-color: rgb(255, 222, 170);
      background-attachment: fixed;
      background-repeat: repeat;
      background-color: #D5DEEF;
