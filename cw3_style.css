@@ -1,3 +1,27 @@
+:root { --ds-info-rgb: 163, 134, 96;
+				--ds-info-text: #000000;
+				--ds-info-link: #291802;
+				--ds-info-link-hover: #774503;
+				--ds-input-bg: #C0B4A5;
+				--ds-input-text: #000000;
+				--ds-primary: #291802;
+				--ds-danger: #B2241F;
+				--ds-success: #2C7D2D;
+				--ds-warning: #774503;
+				--ds-on-accent: #FFFFFF; }
+body { background-image: url('/design/2026/autumn/1614350/background.png?653673811'); background-attachment: fixed; background-repeat: repeat; background-color: #D5DEEF; color: #000000; }
+#app { color: inherit; }
+:root { --cw3-page-bg: RGBA(163, 134, 96, 0.8); --cw3-page-text: #000000; --ds-page-text: #000000; --ds-page-link: #291802; --ds-page-link-hover: #774503; }
+#tr_actions, #tr_mouth, #tr_info, #compact_actions { background-color: RGBA(163, 134, 96, 0.8) !important; color: inherit; }
+#app.compact .compact-info-tab { color: var(--ds-page-text, #000000); }
+#app.compact .compact-info-tab:hover { color: var(--ds-page-link-hover, #774503); }
+#app.compact .compact-info-tab.active { color: var(--ds-page-link, #291802); border-bottom-color: var(--ds-page-link, #291802); font-weight: 600; }
+#info_main h2 a.toggle, #info_main h2 a.toggle:link, #info_main h2 a.toggle:visited { color: var(--ds-page-link, #291802); }
+#info_main h2 a.toggle:hover, #info_main h2 a.toggle:focus { color: var(--ds-page-link-hover, #774503); }
+#tr_chat { background-color: RGBA(163, 134, 96, 0.8); }
+#tr_chat > td { background-color: rgba(163,134,96, 0.55); color: var(--ds-info-text, #000000); }
+#thdey, #ctdey, #compact_info, #relatives_block, #history_block, #parameters_skills_block, #buffdey { background-color: rgba(163,134,96, 0.55); color: var(--ds-info-text, inherit); }
+
 .header-warning {
     background: rgba(var(--ds-info-rgb, 255, 255, 255), 0.9);
     font-weight: bold;
