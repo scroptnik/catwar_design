@@ -3305,7 +3305,7 @@
  .ui-input {
      box-sizing: border-box;
      width: 100%;
-     min-height: var(--ui-height);
+     min-height: 0;
      padding: 6px 10px;
      border: 1px solid var(--ui-line);
      border-radius: var(--ui-radius);
