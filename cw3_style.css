@@ -3303,7 +3303,7 @@
      max-width: 100%;
 }
  .ui-input {
-     box-sizing: border-box;
+    
      width: 100%;
      min-height: var(--ui-height);
      padding: 6px 10px;
