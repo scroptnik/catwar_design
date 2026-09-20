@@ -3879,13 +3879,9 @@
  #info_main h2 a.toggle:hover, #info_main h2 a.toggle:focus {
      color: var(--ds-page-link-hover, #774503);
 }
- #tr_chat {
-     background-color: RGBA(163, 134, 96, 0.8);
-}
- #tr_chat > td {
-     background-color: rgba(2, 0.55);
-     color: var(--ds-info-text, #000000);
-}
+
+
+
  #thdey, #ctdey, #compact_info, #relatives_block, #history_block, #parameters_skills_block, #buffdey {
      background-color: rgba(163,134,96, 0.55);
      color: var(--ds-info-text, inherit);
