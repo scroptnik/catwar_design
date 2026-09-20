@@ -5667,7 +5667,7 @@
 /** * @deprecated Prefer css/variables.css directly. * Kept as a stable path for older references / caches. */
 
  :root {
-     --ds-info-rgb: 163, 134, 96;
+     --ds-info-rgb: 146, 83, 0;
      --ds-info-text: #000000;
      --ds-info-link: #291802;
      --ds-info-link-hover: #774503;
