@@ -4459,7 +4459,7 @@ body { background-image: url('/design/2026/autumn/1614350/background.png?6536738
 #info_main h2 a.toggle, #info_main h2 a.toggle:link, #info_main h2 a.toggle:visited { color: var(--ds-page-link, #291802); }
 #info_main h2 a.toggle:hover, #info_main h2 a.toggle:focus { color: var(--ds-page-link-hover, #774503); }
 #tr_chat { background-color: RGBA(163, 134, 96, 0.8); }
-#tr_chat > td { background-color: rgba(163,134,96, 0.55); color: var(--ds-info-text, #000000); }
+#tr_chat > td { background-color: rgba(255,255,255, 0.55); color: var(--ds-info-text, #000000); }
 #thdey, #ctdey, #compact_info, #relatives_block, #history_block, #parameters_skills_block, #buffdey { background-color: rgba(163,134,96, 0.55); color: var(--ds-info-text, inherit); }
 
 
