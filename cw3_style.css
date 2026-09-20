@@ -4086,7 +4086,7 @@
 /* чат */
 
 #tr_chat>td{
-    background:rgba(var(--ds-info-rgb, 255, 255, 255), 1);
+    background:rgba(var(--ds-info-rgb, 255, 255, 255), 0.8);
     color:var(--ds-info-text, var(--ui-text, #000000))
 }
 #tr_chat>td a:not(.ui-btn):link,#tr_chat>td a:not(.ui-btn):visited{
