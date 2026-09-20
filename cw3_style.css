@@ -4944,7 +4944,7 @@
     box-sizing:border-box;
     padding:0;
     border:1px solid var(--ui-line, rgba(0, 0, 0, 0.16));
-    border-radius:3px;
+
     background:var(--ui-input-bg, var(--ds-input-bg, #000));
     color:var(--ui-input-text, var(--ds-input-text, #fff));
     cursor:pointer;
